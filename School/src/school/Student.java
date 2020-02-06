@@ -29,6 +29,7 @@ public class Student {
         System.out.println("STUDENT: " + name + " ENROLLING IN: " + course.getName());
         if (isEnrolled(course)) {
          //can assume class has enrolled already.
+            System.out.println("STUDENT: already enrolled");
          return true;
         }else{
             courses.add(course);
