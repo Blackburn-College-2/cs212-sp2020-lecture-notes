@@ -26,6 +26,13 @@ public class Runner {
         System.out.println("Dave: " + dave.courses);
         System.out.println("Sally: " + sally.courses);
         
+        Course course2 = new Course("Basket Weaving 999");
+        course2.enrollOptimized(dave);
+        sally.enrollOptimized(course2);
+        System.out.println("Basket Weaving: " + course2.students);
+        System.out.println("Dave: " + dave.courses);
+        System.out.println("Sally: " + sally.courses);
+        
     }
     
 }

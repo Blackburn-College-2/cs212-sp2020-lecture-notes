@@ -35,6 +35,9 @@ public class Student {
             return course.enroll(this);
         }
     }
+    public boolean enrollOptimized(Course course){
+        return isEnrolled(course) || courses.add(course) && course.enrollOptimized(this);
+    }
 
     public boolean isEnrolled(Course course) {
         return courses.contains(course);

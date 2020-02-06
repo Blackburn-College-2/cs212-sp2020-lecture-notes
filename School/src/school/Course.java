@@ -44,4 +44,9 @@ public class Course {
     public String toString(){
         return name;
     }
+
+    boolean enrollOptimized(Student student) {
+//        System.out.println(this + ": enrolling: " + student);
+        return isEnrolled(student) || students.add(student) && student.enrollOptimized(this);
+    }
 }
